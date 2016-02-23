@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+  <translation id="library_modal_title">Sélect an ingredient</translation>
+  <translation id="ok">OK</translation>
+  <translation id="cancel">Cancel</translation>
+  <translation id="error_occured">An error occured</translation>
+
+  <translation id="name">Name</translation>
+  <translation id="ebc">EBC</translation>
+  <translation id="yield">Yield</translation>
+  <translation id="alpha_acidity">Alpha acidity</translation>
+
+  <translation id="days">Days</translation>
+  <translation id="hours">Hours</translation>
+  <translation id="minutes">Minutes</translation>
+  <translation id="day_s">day(s)</translation>
+  <translation id="minute_s">min</translation>
+
+  <translation id="ingredient_type_fermentable">Malt</translation>
+  <translation id="ingredient_type_hop">Hops</translation>
+  <translation id="ingredient_type_misc">Miscellaneous</translation>
+  <translation id="ingredient_type_yeast">Yeast</translation>
+  <translation id="ingredient_type_aroma">Amora</translation>
+  <translation id="ingredient_type_water">Water</translation>
+
+  <translation id="login">Login</translation>
+  <translation id="logout">Logout</translation>
+  <translation id="login_modal_title">Connect</translation>
+  <translation id="login_error">Bad login or password</translation>
+</translations>

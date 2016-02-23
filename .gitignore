@@ -1,0 +1,16 @@
+node_modules
+.tmp
+.idea
+bower_components
+dist
+dist.tar.gz
+ihm.tar.gz
+.dist
+build
+.build
+*.orig
+npm-debug.log
+config.json
+config.dev.json
+.DS_Store
+.parse.local

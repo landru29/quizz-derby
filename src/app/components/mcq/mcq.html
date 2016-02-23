@@ -1,0 +1,11 @@
+<div class="mcq">
+<p data-ng-bind="Mcq.model.text"></p>
+<img data-ng-if="Mcq.model.imageUrl" data-ng-src="{{Mcq.model.imageUrl}}">
+<form>
+    <div data-ng-repeat="choice in Mcq.model.choices track by $index" class="form-group">
+        <input type="checkbox" ng-model="Mcq.answer.multi[$index]" data-ng-show="Mcq.model.multiAnswer">
+        <input type="radio" ng-model="Mcq.answer.single" value="{{$index}}" data-ng-hide="Mcq.model.multiAnswer">
+        <label data-ng-bind="choice.text"></label>
+    </div>
+</form>
+</div>

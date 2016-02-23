@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+  <translation id="common_dialog_confirmation">Confirmation</translation>
+
+  <!-- angular-dialog-service -->
+  <translation id="DIALOGS_ERROR">Error</translation>
+  <translation id="DIALOGS_ERROR_MSG">An unknown error has occurred.</translation>
+  <translation id="DIALOGS_CLOSE">Close</translation>
+  <translation id="DIALOGS_PLEASE_WAIT">Please Wait</translation>
+  <translation id="DIALOGS_PLEASE_WAIT_ELIPS">Please Wait...</translation>
+  <translation id="DIALOGS_PLEASE_WAIT_MSG">Waiting on operation to complete.</translation>
+  <translation id="DIALOGS_PERCENT_COMPLETE">% Complete</translation>
+  <translation id="DIALOGS_NOTIFICATION">Notification</translation>
+  <translation id="DIALOGS_NOTIFICATION_MSG">Unknown application notification.</translation>
+  <translation id="DIALOGS_CONFIRMATION">Confirmation</translation>
+  <translation id="DIALOGS_CONFIRMATION_MSG">Confirmation required.</translation>
+  <translation id="DIALOGS_OK">OK</translation>
+  <translation id="DIALOGS_YES">Yes</translation>
+  <translation id="DIALOGS_NO">No</translation>
+  <translation id="derby_quizz_title"> Le Quizz des Bonhommes</translation>
+
+</translations>
