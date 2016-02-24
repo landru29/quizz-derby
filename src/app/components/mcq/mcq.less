@@ -1,4 +1,5 @@
 @import "../../constants.less";
+@import "../../mixins.less";
 
 @font-face {
   font-family: 'Lekton';
@@ -6,7 +7,8 @@
 }
 
 div.mcq {
-    background-color: fade(#ffffff, 50%);
+    border: solid 1px @frameColor;
+    background-color: fade(white, 50%);
     margin: 10px 10% 10px 10%;
     padding: 25px;
     font-family: Lekton;
@@ -18,5 +20,58 @@ div.mcq {
         max-height: 130px;
         padding: 3px;
         border: solid 1px @normalColor;
+    }
+    form {
+        margin-top: 20px;
+        margin-left: 20px;
+        label {
+            font-weight: normal;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"] {
+            &:not(:checked), &:checked {
+              position: absolute;
+              left: -9999px;
+            }
+
+            &:not(:checked) + label, &:checked + label {
+              position: relative;
+              padding-left: 25px;
+              cursor: pointer;
+            }
+
+            &:not(:checked) + label:before, &:checked + label:before {
+              content: '';
+              position: absolute;
+              left:0; top: 2px;
+              width: 17px; height: 17px;
+              border: 1px solid @frameColor;
+              background: @inputColor;
+              border-radius: 3px;
+
+            }
+
+            &:not(:checked) + label:after, &:checked + label:after {
+              content: '✔';
+              position: absolute;
+              top: -2px; left: 4px;
+              font-size: 20px;
+              color: @checkColor;
+              transition: all .3s;
+            }
+
+            &:not(:checked) + label:after {
+              opacity: 0;
+              transform: scale(0);
+            }
+
+            &:checked + label:after {
+              opacity: 1;
+              transform: scale(1);
+            }
+        }
+
     }
 }

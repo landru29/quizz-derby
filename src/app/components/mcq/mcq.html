@@ -3,9 +3,14 @@
 <img data-ng-if="Mcq.model.imageUrl" data-ng-src="{{Mcq.model.imageUrl}}">
 <form>
     <div data-ng-repeat="choice in Mcq.model.choices track by $index" class="form-group">
-        <input type="checkbox" ng-model="Mcq.answer.multi[$index]" data-ng-show="Mcq.model.multiAnswer">
-        <input type="radio" ng-model="Mcq.answer.single" value="{{$index}}" data-ng-hide="Mcq.model.multiAnswer">
-        <label data-ng-bind="choice.text"></label>
+        <div data-ng-show="Mcq.model.multiAnswer">
+            <input type="checkbox" id="checkbox{{$index}}" ng-model="Mcq.answer.multi[$index]">
+            <label data-ng-bind="choice.text" for="checkbox{{$index}}"></label>
+        </div>
+        <div data-ng-hide="Mcq.model.multiAnswer">
+            <input type="radio" id="radio{{$index}}" ng-model="Mcq.answer.single" value="{{$index}}">
+            <label data-ng-bind="choice.text" for="radio{{$index}}"></label>
+        </div>
     </div>
 </form>
 </div>
