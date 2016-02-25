@@ -1,9 +1,18 @@
 @application-bg              : #FFFFFF;
-@main-color                  : #333333;
+@main-color                  : #383127;
 @normalColor                 : #444444;
 @frameColor                  : #aaaaaa;
-@checkColor                  : #09ad7e;
+@checkColor                  : #fb8313;
 @inputColor                  : #f8f8f8;
+
+@buttonActiveBackgroundColor : @checkColor;
+@buttonTopGradientColor      : lighten(@buttonActiveBackgroundColor, 15%);
+@buttonBottomGradientColor   : lighten(@buttonTopGradientColor, 10%);
+@buttonTopBorderColor        : lighten(@buttonTopGradientColor, 20%);
+@buttonHoverBackgroundColor  : lighten(@buttonActiveBackgroundColor, 10%);
+@buttonTextColor             : @main-color;
+@buttonHoverTextColor        : darken(@buttonTextColor, 20%);
+
 
 .border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
   -webkit-border-top-right-radius: @topright;

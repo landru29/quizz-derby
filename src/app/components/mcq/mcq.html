@@ -1,7 +1,7 @@
 <div class="mcq">
 <p data-ng-bind="Mcq.model.text"></p>
 <img data-ng-if="Mcq.model.imageUrl" data-ng-src="{{Mcq.model.imageUrl}}">
-<form>
+<form data-ng-submit="Mcq.computeAnswers()">
     <div data-ng-repeat="choice in Mcq.model.choices track by $index" class="form-group">
         <div data-ng-show="Mcq.model.multiAnswer">
             <input type="checkbox" id="checkbox{{$index}}" ng-model="Mcq.answer.multi[$index]">
@@ -12,5 +12,6 @@
             <label data-ng-bind="choice.text" for="radio{{$index}}"></label>
         </div>
     </div>
+    <button data-translate="derby_quizz_button_submit_title" type="submit"></button>
 </form>
 </div>
