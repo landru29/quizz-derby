@@ -73,5 +73,50 @@ div.mcq {
             }
         }
 
+        input[type="radio"] {
+            &:not(:checked), &:checked {
+              position: absolute;
+              left: -9999px;
+            }
+
+            &:not(:checked) + label, &:checked + label {
+              position: relative;
+              padding-left: 25px;
+              cursor: pointer;
+            }
+
+            &:not(:checked) + label:before, &:checked + label:before {
+              content: '';
+              position: absolute;
+              left:0; top: 2px;
+              width: 16px; height: 16px;
+              border: 1px solid @frameColor;
+              background: @inputColor;
+              border-radius: 8px;
+
+            }
+
+            &:not(:checked) + label:after, &:checked + label:after {
+              content: '';
+              position: absolute;
+              top: 7px; left: 5px;
+              font-size: 20px;
+              width: 6px; height: 6px;
+              background: @checkColor;
+              border-radius: 3px;
+              transition: all .3s;
+            }
+
+            &:not(:checked) + label:after {
+              opacity: 0;
+              transform: scale(0);
+            }
+
+            &:checked + label:after {
+              opacity: 1;
+              transform: scale(1);
+            }
+        }
+
     }
 }
