@@ -1,5 +1,5 @@
 <div class="mcq-question">
-<p data-ng-bind="McqQuestion.model.text"></p>
+<p data-ng-bind-html="McqQuestion.model.html"></p>
 <img data-ng-if="McqQuestion.model.imageUrl" data-ng-src="{{McqQuestion.model.imageUrl}}">
 <form data-ng-submit="McqQuestion.computeAnswers()">
     <div data-ng-repeat="choice in McqQuestion.model.choices track by $index" class="form-group">
@@ -9,7 +9,7 @@
         </div>
         <div data-ng-hide="McqQuestion.model.multiAnswer">
             <input type="radio" id="radio{{$index}}" ng-model="McqQuestion.answer.single" value="{{$index}}">
-            <label data-ng-bind="choice.text" for="radio{{$index}}"></label>
+            <label data-ng-bind-html="choice.html" for="radio{{$index}}"></label>
         </div>
     </div>
     <button data-translate="derby_quizz_button_submit_title" type="submit"></button>

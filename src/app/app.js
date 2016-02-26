@@ -16,12 +16,13 @@ angular.module('App', [
     'angularMoment',
     'toaster',
     'uuid',
+    'hc.marked',
     'api-plugin'
 ])
     .config(function($urlRouterProvider, $locationProvider) {
         'use strict';
         $urlRouterProvider.otherwise('/');
-        $locationProvider.html5Mode(true);
+        $locationProvider.html5Mode(false);
     })
 
     .config(function ($translateProvider, $windowProvider) {

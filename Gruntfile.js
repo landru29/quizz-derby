@@ -335,6 +335,7 @@ module.exports = function(grunt) {
   grunt.registerTask('serve', [
     'clean:dev',
     'copy:assets',
+    'copy:fonts',
     'concat:moment',
     'ngconstant:dev',
     'wiredep:style',
@@ -357,6 +358,7 @@ module.exports = function(grunt) {
     'copy:translations',
     'copy:index',
     'copy:assets',
+    'copy:fonts',
     'concat:moment',
     'copy:conf',
     'copy:dist',

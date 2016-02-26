@@ -4,10 +4,36 @@
     font-family: 'Lekton';
     src: url(../assets/Lekton-Regular.ttf);
 }
+
+div.mcq-question {
+    background-color: fade(white, 50%);
+}
+
+div.mcq-answer {
+    &.success {
+        background-color: fade(@successBackgroundColor, 50%);
+    }
+
+    &.error {
+        background-color: fade(@errorBackgroundColor, 50%);
+    }
+    .logo {
+        font-size: 4em;
+        position: absolute;
+        right: 90px;
+        top: -10px;
+        &.success {
+            color: @logoSuccessColor;
+        }
+        &.error {
+            color: @logoErrorColor;
+        }
+    }
+}
+
 div.mcq-question,
 div.mcq-answer {
     border: solid 1px @frameColor;
-    background-color: fade(white, 50%);
     margin: 10px 10%;
     padding: 25px;
     font-family: Lekton;

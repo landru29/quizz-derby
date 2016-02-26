@@ -5,7 +5,7 @@ angular.module('App').component('mcqQuestion', {
     },
     controllerAs: 'McqQuestion',
     templateUrl: 'app/components/mcq/mcq-question/mcq-question.html',
-    controller: function() {
+    controller: function(markdown) {
         'use strict';
 
         var self = this;
@@ -45,5 +45,14 @@ angular.module('App').component('mcqQuestion', {
             reformatAnswer(self.model, self.answer);
             self.result({RESULT:self.model.scoring});
         };
+
+        function init() {
+            self.model.html = markdown(self.model.text);
+            self.model.choices.forEach(function(choice) {
+                choice.html = markdown(choice.text);
+            });
+        }
+
+        init();
     }
 });

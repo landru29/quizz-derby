@@ -3,7 +3,6 @@ angular.module('App').controller('HomeCtrl',
 		'use strict';
 
 		var self = this;
-		this.text = "hello world";
 
 		function loadQuizz() {
 			self.questions = [];

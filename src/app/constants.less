@@ -4,6 +4,8 @@
 @frameColor                  : #aaaaaa;
 @checkColor                  : #fb8313;
 @inputColor                  : #f8f8f8;
+@errorBackgroundColor        : #ecc5c5;
+@successBackgroundColor      : #c5ecc5;
 
 @buttonActiveBackgroundColor : @checkColor;
 @buttonTopGradientColor      : lighten(@buttonActiveBackgroundColor, 15%);
@@ -12,6 +14,8 @@
 @buttonHoverBackgroundColor  : lighten(@buttonActiveBackgroundColor, 10%);
 @buttonTextColor             : @main-color;
 @buttonHoverTextColor        : darken(@buttonTextColor, 20%);
+@logoSuccessColor            : darken(@successBackgroundColor, 50%);
+@logoErrorColor              : darken(@errorBackgroundColor, 50%);
 
 
 .border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {

@@ -1,0 +1,59 @@
+@import "../../../constants.less";
+
+div.mcq-answer {
+    ul {
+        margin-top: 10px;
+        li {
+            & span{
+                position: relative;
+                &:before {
+                content: ' ';
+                position: absolute;
+                left: -22px;
+                top: 0px;
+                width: 17px;
+                height: 17px;
+                border: 1px solid @frameColor;
+                background: @inputColor;
+                border-radius: 3px;
+                }
+            }
+
+            // Correct answer
+            &.check-check span:after {
+                content: '✔';
+                position: absolute;
+                left: -19px;
+                top: -39px;
+                z-index: 2;
+                font-size: 20px;
+                color: @logoSuccessColor;
+            }
+            // Forgotten answer
+            &.check-uncheck span:after {
+                content: 'X';
+                font-family: sans-serif;
+                font-weight: bold;
+                position: absolute;
+                left: -18px;
+                top: -37px;
+                z-index: 2;
+                font-size: 15px;
+                color: @logoErrorColor;
+            }
+
+            // Correct answer
+            &.check-check,&.check-check span,&.check-check span p {
+                font-weight: bold;
+            }
+            // Forgotten answer
+            &.check-uncheck,&.check-uncheck span,&.check-uncheck span p {
+                font-weight: bold;
+            }
+            // Bad answer
+            &.uncheck-check,&.uncheck-check span,&.uncheck-check span p {
+                text-decoration: line-through;
+            }
+        }
+    }
+}

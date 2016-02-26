@@ -1,11 +1,15 @@
-<div class="mcq-answer">
-    <p data-ng-bind="McqAnswer.model.text"></p>
+<div class="mcq-answer" data-ng-class="{'success': McqAnswer.model.scoring.isOk,'error': !McqAnswer.model.scoring.isOk}">
+    <i class="fa fa-check logo success" data-ng-if="McqAnswer.model.scoring.isOk"></i>
+    <i class="fa fa-close logo error" data-ng-if="!McqAnswer.model.scoring.isOk"></i>
+    <p data-ng-bind-html="McqAnswer.model.html"></p>
     <img data-ng-if="McqAnswer.model.imageUrl" data-ng-src="{{McqAnswer.model.imageUrl}}">
     <ul>
-        <li data-ng-repeat="choice in McqAnswer.model.choices track by $index">
-            <span data-ng-bind="choice.text"></span>
+        <li data-ng-repeat="choice in McqAnswer.model.choices track by $index"
+            data-ng-class="{'check-check': choice.scoring>0 && choice.checked, 'check-uncheck': choice.scoring>0 && !choice.checked, 'uncheck-check': choice.scoring<=0 && choice.checked, 'uncheck-uncheck': choice.scoring<=0 && !choice.checked}">
+            <span data-ng-bind-html="choice.html"></span>
         </li>
     </ul>
+    <div data-ng-bind-html="McqAnswer.model.explainationHtml"></div>
     <div>
         <button data-translate="derby_quizz_button_next_title"
                 type="button"
@@ -13,3 +17,6 @@
                 data-ng-click="McqAnswer.done()"></button>
     </div>
 </div>
+
+<!-- data-ng-class="{'check-check': choice.scoring>0 && choice.checked, 'check-uncheck': choice.scoring>0 && !choice.checked, 'uncheck-check': choice.scoring<=0 && choice.checked, 'uncheck-uncheck': choice.scoring<=0 && !choice.checked}">
+-->
