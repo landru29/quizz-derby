@@ -1,7 +1,12 @@
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12">
-			<mcq data-ng-repeat="question in Home.questions" data-model="question"></mcq>
+		<div class="col-md-12" data-ng-repeat="question in Home.questions">
+			<mcq-question data-model="question"
+			              data-result="Home.getResult(RESULT)"
+						  data-ng-hide="question.done"></mcq-question>
+		    <mcq-answer data-model="question"
+			            data-next="Home.next(RESULT)"
+						data-ng-show="question.done"></mcq-answer>
 		</div>
 	</div>
 </div>

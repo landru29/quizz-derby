@@ -22,6 +22,14 @@ angular.module('App').controller('HomeCtrl',
 			loadQuizz();
 		}
 
+		this.next = function(result) {
+			loadQuizz();
+		};
+
+		this.getResult = function(result) {
+			console.log(result);
+		};
+
 		init();
 	}
 );

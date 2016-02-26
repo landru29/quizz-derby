@@ -1,0 +1,15 @@
+<div class="mcq-answer">
+    <p data-ng-bind="McqAnswer.model.text"></p>
+    <img data-ng-if="McqAnswer.model.imageUrl" data-ng-src="{{McqAnswer.model.imageUrl}}">
+    <ul>
+        <li data-ng-repeat="choice in McqAnswer.model.choices track by $index">
+            <span data-ng-bind="choice.text"></span>
+        </li>
+    </ul>
+    <div>
+        <button data-translate="derby_quizz_button_next_title"
+                type="button"
+                data-ng-hide="McqAnswer.serie"
+                data-ng-click="McqAnswer.done()"></button>
+    </div>
+</div>
