@@ -183,7 +183,7 @@ module.exports = function(grunt) {
     },
 
     ngtemplates: {
-      brewItYourself: {
+      App: {
         cwd: '<%= project.src%>',
         src: 'app/**/*.html',
         dest: '<%= project.build%>/template.js',
@@ -364,7 +364,7 @@ module.exports = function(grunt) {
     'copy:dist',
     'less',
     'useminPrepare',
-    'ngtemplates:brewItYourself',
+    'ngtemplates:App',
     'concat:generated',
     'ngAnnotate',
     'cssmin:generated',
