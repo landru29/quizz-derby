@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <translations>
-  <translation id="quizz_rule_tile">Rules {{year}} : {{subtitle}}</translation>
+  <translation id="quizz_rule_tile">Rules {{year}} :</translation>
 </translations>

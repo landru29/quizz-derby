@@ -1,5 +1,8 @@
-<div class="frame">
-    <h2 data-translate="quizz_rule_tile" data-translate-values="{year: Rules.year, subtitle: Rules.subtitle}"></h2>
+<div class="frame rules">
+    <h1 data-ng-bind="Rules.h1.label"></h1>
+    <p  data-ng-if="Rules.h1.text" data-ng-bind-html="Rules.h1.text"></p>
+    <h2 data-ng-bind="Rules.h2.label"></h2>
+    <p  data-ng-if="Rules.h2.text" data-ng-bind-html="Rules.h2.text"></p>
     <div data-ng-bind-html="Rules.html">
     </div>
 </div>
