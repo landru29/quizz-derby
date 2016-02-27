@@ -1,0 +1,214 @@
+{
+	"1": {
+		"label": "Paramètres de match",
+		"sub": {
+			"1": {
+				"label": "Équipes"
+			},
+			"2": {
+				"label": "Piste"
+			},
+			"3": {
+				"label": "Structure"
+			},
+			"4": {
+				"label": "Périodes"
+			},
+			"5": {
+				"label": "Jams"
+			},
+			"6": {
+				"label": "Prolongation"
+			},
+			"7": {
+				"label": "Timeouts[temps morts]"
+			},
+			"8": {
+				"label": "Penalty box[prison]"
+			},
+			"9": {
+				"label": "Chronomètres"
+			},
+			"10": {
+				"label": "Coups de sifflet"
+			},
+			"11": {
+				"label": "Official review [révision d’arbitrage]"
+			}
+		}
+	},
+	"2": {
+		"label": "Position et identification des patineurs",
+		"text": "Les positions des patineurs sont définies en fonction des postes qu’ils occupent depuis le début  d’un <i>Jam</i> jusqu’au début du <i>Jam</i> suivant (incluant le temps entre les <i>Jams</i>). Les patineurs qui  n’ont pas participé au <i>Jam</i> précédent sont considérés <i>Blockers</i> (voir Section 2.1), jusqu’à ce que  le  <i>Jam</i> suivant débute, même s’ils s’alignent avec un poste différent. Un patineur n’est pas limité en  nombre de postes qu’il peut occuper pendant un match, mais est limité à un poste spécifique à  la fois. Un maximum de quatre <i>Blockers</i> et un <i>Jammer</i> pour chaque équipe est autorisé sur la piste  pendant le match : seul un des <i>Blockers</i> peut être <i>Pivot</i> (voir Section 2.2 – <i>Blocker</i> <i>Pivot</i> et   2.3 – <i>Jammer</i>). ",
+		"sub": {
+			"1": {
+				"label": "Blocker"
+			},
+			"2": {
+				"label": "Blocker pivot"
+			},
+			"3": {
+				"label": "Jammer"
+			},
+			"4": {
+				"label": "Lead jammer"
+			},
+			"5": {
+				"label": "Star pass [passage de l’étoile]"
+			},
+			"6": {
+				"label": "Couvre-casques"
+			},
+			"7": {
+				"label": "Uniformes"
+			},
+			"8": {
+				"label": "Bijoux"
+			},
+			"9": {
+				"label": "Patins"
+			}
+		}
+	},
+	"3": {
+		"label": "Le pack",
+		"sub": {
+			"1": {
+				"label": "Définition du pack"
+			},
+			"2": {
+				"label": "Positionnement pré-jam"
+			},
+			"3": {
+				"label": "Positionnement pendant le jam"
+			}
+		}
+	},
+	"4": {
+		"label": "Blockages",
+		"sub": {
+			"1": {
+				"label": "Blocages en général"
+			},
+			"2": {
+				"label": "Zones de blocage et cibles"
+			}
+		}
+	},
+	"5": {
+		"label": "Pénalités",
+		"text": "<p>Une pénalité est une sanction, un handicap, ou une perte d’avantage imposée à une équipe ou  à un patineur suite à une infraction aux règles ou à une faute. Les pénalités sont appliquées à la  fois au patineur et à la position que le patineur occupe à ce moment-là. Les patineurs et équipes  subissent des pénalités en fonction des infractions commises.</p><p>Les pénalités et avertissements sont signalés et appliqués par les arbitres au moment où elles ont  lieu pendant un match (voir « WFTDA Official Hand Signals » pour les gestes d’arbitrage approuvés  et « WFTDA Officiating <i>Verbal Cues</i> » pour les signaux verbaux approuvés). Si un arbitre n’est pas  certain qu’une infraction a eu un impact suffisant sur le match pour juger d’une pénalité, aucune  pénalité ne sera appelée (voir Section 8.3.4).</p><div><b>TYPES DE PÉNALITÉS</b></div><p>Les pénalités suivantes sont décrites en détail dans les sections listées plus bas. Ces sections  mentionnent des exemples spécifiques qui doivent être explicitement suivis. Les actions illégales qui  ne sont pas spécifiées ci-dessous doivent être pénalisées en se servant de ces descriptions comme  lignes directrices.</p><div>Contact sur Zones Cibles Illégales</div><ul><li>Blocage par Derrière</li><li>Blocage à la Tête / Blocage haut</li><li>Blocage Bas</li></ul><div>Contact avec Zones de Blocage Illégales</div><ul><li>Utilisation des Coudes</li><li>Utilisation des Avant-bras et Mains</li><li>Blocage avec la Tête</li></ul><div>Pénalités pour Blocage Illégal</div><ul><li>Blocage à plusieurs</li><li>Engagement Hors des Limites</li><li>Direction de Jeu</li><li>Hors-jeu </li></ul> <div>Pénalités pour Action Illégale sans Contact</div><ul><li>Couper la piste</li><li>Patiner Hors des Limites</li><li>Procédures Illégales</li><li>Insubordination</li><li>Retardement de Jeu</li></ul> <div>Conduite Illégale</div><ul><li>Mauvaise Conduite / Très Mauvaise Conduite</li></ul>",
+		"sub": {
+			"1": {
+				"label": "Blocage par derrière"
+			},
+			"2": {
+				"label": "Blocage à la tête / blocage haut"
+			},
+			"3": {
+				"label": "Blocage bas"
+			},
+			"4": {
+				"label": "Utilisation des coudes"
+			},
+			"5": {
+				"label": "Utilisation des avant-bras et des mains"
+			},
+			"6": {
+				"label": "Blocage avec la tête"
+			},
+			"7": {
+				"label": "Blocage à plusieurs"
+			},
+			"8": {
+				"label": "Engagement hors des limites"
+			},
+			"9": {
+				"label": "Direction de jeu"
+			},
+			"10": {
+				"label": "Hors-jeu"
+			},
+			"11": {
+				"label": "Couper la piste"
+			},
+			"12": {
+				"label": "Patiner hors des limites"
+			},
+			"13": {
+				"label": "Procédures illégales"
+			},
+			"14": {
+				"label": "Insubordination"
+			},
+			"15": {
+				"label": "Retardement de jeu"
+			},
+			"16": {
+				"label": "Mauvaise conduite / très mauvaise conduite"
+			}
+		}
+	},
+	"6": {
+		"label": "Mise ne application des pénalités",
+		"sub": {
+			"1": {
+				"label": "Pénalités"
+			},
+			"2": {
+				"label": "Exécution des pénalités"
+			},
+			"3": {
+				"label": "Les deux jammers sont pénalisés / hors de la piste"
+			},
+			"4": {
+				"label": "Expulsion et foul out [exclusion]"
+			}
+		}
+	},
+	"7": {
+		"label": "Score",
+		"sub": {
+			"1": {
+				"label": "Passages / dépasser"
+			},
+			"2": {
+				"label": "Points"
+			}
+		}
+	},
+	"8": {
+		"label": "Officiels",
+		"sub": {
+			"1": {
+				"label": "Encadrement"
+			},
+			"2": {
+				"label": "Devoirs"
+			},
+			"3": {
+				"label": "Appréciation des arbitres"
+			},
+			"4": {
+				"label": "Équipement requis"
+			}
+		}
+	},
+	"9": {
+		"label": "Sécurité",
+		"sub": {
+			"1": {
+				"label": "Équipement de protection"
+			},
+			"2": {
+				"label": "Personnel de sécurité"
+			},
+			"3": {
+				"label": "Patineurs blessés"
+			},
+			"4": {
+				"label": "Patineurs affaiblis"
+			}
+		}
+	},
+}
