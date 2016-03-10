@@ -21,6 +21,10 @@ div.mcq-answer {
         font-size: 4em;
         position: absolute;
         right: 90px;
+        @media (max-width: @screen-md-min) {
+          right: 10%;
+          top: -20px;
+        }
         top: -10px;
         &.success {
             color: @logoSuccessColor;
